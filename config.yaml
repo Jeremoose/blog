@@ -1,0 +1,42 @@
+baseURL: https://jeremoose.com
+languageCode: en-us
+title: Jeremoose
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: true
+buildFuture: false
+buildExpired: false
+
+params:
+  disableThemeToggle: true
+  homeInfoParams:
+    Title: Hi!
+    Content: I see you've found my blog. **Welcome!** I created this space mostly as a way to write down my thoughts and plans. Incidentally it also makes it easy to share my ideas with friends and family. However, since this blog is available to the public, I figured I would share my _Github_ and _LinkedIn_ in below.
+
+  socialIcons: # optional
+    - name: "Github"
+      url: "https://github.com/Jeremoose"
+    - name: "LinkedIn"
+      url: "https://www.linkedin.com/in/jvierbergen/"
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # is necessary
+
+menu:
+  main:
+    - identifier: Archives
+      name: archives
+      url: /archives/
+      weight: 10
+    - identifier: Search
+      name: search
+      url: /search/
+      weight: 10
